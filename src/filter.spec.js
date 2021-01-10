@@ -20,7 +20,7 @@ describe('Implements filter function ', () => {
 
    it('Testing upperCase filter for an array', () => {
 		const filterUpperCase = (value) => {
-			return value === value.toUpperCase();
+		 return value === value.toUpperCase();
 		}
 		expect(filter(['a','B','c','D'], filterUpperCase)).toEqual(['B','D']);
 	});

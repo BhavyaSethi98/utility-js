@@ -11,7 +11,7 @@ const reduce = (input, reducer, additionalValue) =>{
 	else{ result = additionalValue }
 
 	for ( let i = 0; i < input.length; i++){
-		result = reducer(result, input[i], i, input.values());
+		result = reducer(result, input[i]);
 	}
 	return result;
 }
